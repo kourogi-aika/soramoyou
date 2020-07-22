@@ -1,0 +1,236 @@
+/*-------------------------------
+               BASE
+--------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #9BCBE3;
+}
+
+
+
+/*-------------------------------
+         LAYOUT MOBILE
+--------------------------------*/
+
+#container {
+  margin: auto;
+  max-width: 960px;
+}
+
+header {
+  position: relative;
+  height: 4rem;
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+  background-color: #FFFFFF;
+  color: #666666;
+}
+
+header h1 {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.2rem;
+}
+
+.logo{
+  width: 35%;
+}
+
+#mainVisual {
+  width: 100%;
+}
+
+#mainVisual img {
+  width: 100%;
+  display: block;
+}
+
+#nav-drawer {
+  width: 100%;
+  position: absolute;
+}
+
+.navButton {
+  position: absolute;
+  top: 1.3rem;
+  right: 2rem;
+
+}
+
+.navButton a {
+  color: #666666;
+  font-size: 1.35rem;
+}
+
+nav {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 30%;
+  background-color: rgba(255,255,255,.7);
+  list-style: none;
+}
+
+.menu li {
+  height: 3.3rem;
+  border-bottom: solid 1px #AAA;
+}
+
+.menu a {
+  display: block;
+  padding: 0.95rem;
+  text-align: center;
+  color: #666666;
+}
+
+.menu a:hover {
+  background-color: #FFFFFF;
+}
+
+
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  padding: 1rem;
+  padding-left: 1rem;
+  text-align: justify;
+  font-size: 0.85rem;
+  background-color: #F6F6F6;
+}
+
+#pic{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#pic li{
+  width: 45%;
+  margin: 1.5vw auto;
+}
+
+#pic img {
+  width: 100%;
+  padding-bottom: 0.5rem;
+}
+
+#pic p{
+  padding-left: 2.1rem;
+  padding-right:1.8rem;
+}
+
+aside {
+  padding: 2rem;
+  text-align: left;
+  font-size: 0.85rem;
+  background-color: #EEE;
+}
+article h1,
+article p,
+aside h1,
+aside p {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+footer {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #FFF;
+  color:#666666;
+}
+
+/*-------------------------------
+      LAYOUT PC (OverWrite)
+--------------------------------*/
+
+/*@media only screen and (min-width: 768px) {
+
+  header {
+    height: 4rem;
+  }
+  header h1 {
+    top: 0.5rem;
+    left: 0rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .logo{
+    width: 6%;
+  }
+
+  .top{
+    width: 100%;
+  }
+
+  #nav-drawer {
+    width: 100%;
+    position: absolute;
+  }
+
+
+  #nav-open {
+    display:none;
+  }
+
+
+  main {
+    flex-direction: column;
+  }
+  article {
+    flex: 3;
+    padding: 3rem;
+    font-size: 1rem;
+  }
+
+  #pic li {
+    list-style: none;
+    width: 100%;
+    margin-right: 2rem;
+  }
+
+  #pic img{
+    width: 35%;
+    float: left;
+    padding-left: 4.2rem;
+    padding-right:3rem;
+    padding-top:3rem;
+    padding-bottom: 3rem;
+  }
+
+
+  aside {
+    flex: 1;
+    padding: 3rem;
+    font-size: 1rem;
+  }
+
+  aside h1,
+  aside p{
+  padding-left: 3rem;
+}
+}
+*/
